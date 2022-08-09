@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "I5CqrExdWVh5tbEeX49/G9+F9ZqgOSO2SVF4luJScXXn007VjRp0OLRS0MeiCzleF/WUS83zgv5qvS2dpkhqTw==",
+  "success": true,
+  "projectFilePath": "D:\\VisualStudio Projects\\TestProject\\TestProject\\TestProject.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\MagicBook\\.nuget\\packages\\control.draggable\\1.0.5049.269\\control.draggable.1.0.5049.269.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"Control.Draggable 1.0.5049.269\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\", а не целевой платформы проекта \"net6.0-windows7.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "libraryId": "Control.Draggable",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    }
+  ]
+}
