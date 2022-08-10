@@ -23,6 +23,6 @@
         public override bool IsDotInFigure(Point point) =>
             Math.Pow((int)(Position.X + Radius / 2) - point.X, 2) + Math.Pow((int)(Position.Y + Radius / 2) - point.Y, 2)
                 <= Radius * Radius ? true : false;
-        
+
     }
 }

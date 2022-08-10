@@ -40,45 +40,6 @@ namespace TestProject
             rectangle.Draw(e.Graphics);
         }
 
-        private void panel1_MouseUp(object sender, MouseEventArgs e)
-        {
-            foreach (Connector connector in _connectors)
-            {
-                if (connector.FirstPanel.Name == "panel1")
-                    connector.FirstPanel.Location = panel1.Location;
-                else if (connector.SecondPanel.Name == "panel1")
-                    connector.SecondPanel.Location = panel1.Location;
-            }
-            panel1.Invalidate();
-            this.Invalidate();
-        }
-
-        private void panel2_MouseUp(object sender, MouseEventArgs e)
-        {
-            foreach (Connector connector in _connectors)
-            {
-                if (connector.FirstPanel.Name == "panel2")
-                    connector.FirstPanel.Location = panel2.Location;
-                else if (connector.SecondPanel.Name == "panel2")
-                    connector.SecondPanel = panel2;
-            }
-            panel2.Invalidate();
-            this.Invalidate();
-        }
-
-        private void panel3_MouseUp(object sender, MouseEventArgs e)
-        {
-            foreach (Connector connector in _connectors)
-            {
-                if (connector.FirstPanel.Name == "panel3")
-                    connector.FirstPanel = panel3;
-                else if (connector.SecondPanel.Name == "panel3")
-                    connector.SecondPanel = panel3;
-            }
-            panel3.Invalidate();
-            this.Invalidate();
-        }
-
         private void panel1_DoubleClick(object sender, EventArgs e)
         {
             if (_firstPanel == null)
@@ -139,6 +100,60 @@ namespace TestProject
             {
                 connector.Draw(e.Graphics);
             }
+        }
+
+        private void panel1_SizeChanged(object sender, EventArgs e)
+        {
+            panel1.Invalidate();
+            this.Invalidate();
+        }
+
+        private void panel2_SizeChanged(object sender, EventArgs e)
+        {
+            panel2.Invalidate();
+            this.Invalidate();
+        }
+
+        private void panel3_SizeChanged(object sender, EventArgs e)
+        {
+            panel3.Invalidate();
+            this.Invalidate();
+        }
+
+        private void panel1_MouseUp(object sender, MouseEventArgs e)
+        {
+            foreach (Connector connector in _connectors)
+            {
+                if (connector.FirstPanel.Name == "panel1")
+                    connector.FirstPanel.Location = panel1.Location;
+                else if (connector.SecondPanel.Name == "panel1")
+                    connector.SecondPanel.Location = panel1.Location;
+            }
+            this.Invalidate();
+        }
+
+        private void panel2_MouseUp(object sender, MouseEventArgs e)
+        {
+            foreach (Connector connector in _connectors)
+            {
+                if (connector.FirstPanel.Name == "panel2")
+                    connector.FirstPanel.Location = panel2.Location;
+                else if (connector.SecondPanel.Name == "panel2")
+                    connector.SecondPanel = panel2;
+            }
+            this.Invalidate();
+        }
+
+        private void panel3_MouseUp(object sender, MouseEventArgs e)
+        {
+            foreach (Connector connector in _connectors)
+            {
+                if (connector.FirstPanel.Name == "panel3")
+                    connector.FirstPanel = panel3;
+                else if (connector.SecondPanel.Name == "panel3")
+                    connector.SecondPanel = panel3;
+            }
+            this.Invalidate();
         }
     }
 }

@@ -19,6 +19,5 @@
 
         public override bool IsDotInFigure(Point point)
             => point.X > Position.X && point.Y > Position.Y && point.X < Position.X + Width && point.Y < Position.Y + Height ? true : false;
-
     }
 }

@@ -42,26 +42,29 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(154, 154);
             this.panel1.TabIndex = 0;
+            this.panel1.SizeChanged += new System.EventHandler(this.panel1_SizeChanged);
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             this.panel1.DoubleClick += new System.EventHandler(this.panel1_DoubleClick);
             this.panel1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseUp);
             // 
             // panel2
             // 
-            this.panel2.Location = new System.Drawing.Point(172, 12);
+            this.panel2.Location = new System.Drawing.Point(422, 12);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(178, 154);
             this.panel2.TabIndex = 1;
+            this.panel2.SizeChanged += new System.EventHandler(this.panel2_SizeChanged);
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             this.panel2.DoubleClick += new System.EventHandler(this.panel2_DoubleClick);
             this.panel2.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseUp);
             // 
             // panel3
             // 
-            this.panel3.Location = new System.Drawing.Point(12, 172);
+            this.panel3.Location = new System.Drawing.Point(156, 244);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(281, 123);
             this.panel3.TabIndex = 2;
+            this.panel3.SizeChanged += new System.EventHandler(this.panel3_SizeChanged);
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             this.panel3.DoubleClick += new System.EventHandler(this.panel3_DoubleClick);
             this.panel3.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel3_MouseUp);
