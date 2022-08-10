@@ -20,7 +20,7 @@ namespace TestProject
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
             Figure circle = new Circle(panel1.Height <= panel1.Width ? panel1.Height / 2 : panel1.Width / 2, Color.Black, Color.Black, new Point(0, 0));
-            // Рамка для обозначения краев Panel
+            // Draw rectangle to show borderds of the panel
             e.Graphics.DrawRectangle(new Pen(Color.Black), 0, 0, panel1.Width - 1, panel1.Height - 1);
             circle.Draw(e.Graphics);
         }
@@ -28,7 +28,7 @@ namespace TestProject
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
             Figure triangle = new EquilateralTriangle(_angle, panel2.Height <= panel2.Width ? panel2.Height : panel2.Width, Color.Black, Color.Black, new Point(0, 0));
-            // Рамка для обозначения краев Panel
+            // Draw rectangle to show borderds of the panel
             e.Graphics.DrawRectangle(new Pen(Color.Black), 0, 0, panel2.Width - 1, panel2.Height - 1);
 
             triangle.Draw(e.Graphics);
